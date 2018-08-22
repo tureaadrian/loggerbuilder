@@ -1,8 +1,0 @@
-setup.py
-loggerbuilder/__init__.py
-loggerbuilder/loggerbuilder.py
-loggerbuilder.egg-info/PKG-INFO
-loggerbuilder.egg-info/SOURCES.txt
-loggerbuilder.egg-info/dependency_links.txt
-loggerbuilder.egg-info/not-zip-safe
-loggerbuilder.egg-info/top_level.txt
