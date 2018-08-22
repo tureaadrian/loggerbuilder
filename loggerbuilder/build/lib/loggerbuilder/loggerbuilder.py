@@ -1,4 +1,7 @@
+import logging
 import json
+import datetime
+
 
 class LogMessage:
     current = {}
@@ -25,6 +28,20 @@ class LogMessage:
 
         def build(self):
             return LogMessage(self)
+
+
+logging.basicConfig(level=logging.DEBUG, format='Date & Time: %(asctime)s, Level: %(levelname)s, Message :%(message)s, service": "Discovery"', datefmt='%m/%d/%Y %I:%M:%S %p')
+
+logMessage2 = LogMessage.LogMessageBuilder()
+
+now = datetime.datetime.now()
+
+message = logMessage2.add("test", "test").add("1", 1).add("key", "value").add("test2", "test3").add("current date",now.strftime("%Y-%m-%d %H:%M")).build().toJson()
+
+logging.warning(message)
+
+
+
 
 
 
